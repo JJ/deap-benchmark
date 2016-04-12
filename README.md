@@ -7,7 +7,8 @@ To run this, install dependences:
 pip install -r requirements.txt
 ```
 
-preffixed by `sudo` if needed. 
+preffixed by `sudo` if needed. If both Python 2 and 3 are installed,
+use `pip3` instead 
 
 ## Run benchmarks
 
@@ -16,8 +17,11 @@ preffixed by `sudo` if needed.
 python bitflip.py <numpy/lists> [native]
 ```
 
+Use python3 if needed. The `lists` option will not work with Python2
+
 Arguments:
- * [numpy/lists]: you have to select if run the benchmark using numpy arrays or Python lists.
+ * [numpy/lists]: you have to select if run the benchmark using numpy
+   arrays or Python lists. 
  * [native]: if you add this param, you will run the benchmark using native bitflip. Else, you will run a bitflip that only changes one bit.
 
 
